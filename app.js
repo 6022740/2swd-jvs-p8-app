@@ -3,7 +3,7 @@ import api from './routes/api.js';
 
 const PORT = process.env.PORT || 3000;
 
-const app = express();
+let app = express();
 app.use(json());
 app.use(express.static('static'));
 
